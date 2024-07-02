@@ -8,7 +8,6 @@ pub fn is_armstrong_number(num: u32) -> bool {
             let digit = c.to_digit(10).unwrap() as u64;
             digit.pow(num_digits)
         })
-        .sum();
-        
+        .sum();        
     sum == num as u64     
 }
